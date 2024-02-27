@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600&family=Noto+Sans+JP:wght@400;500&family=Open+Sans&family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Kicks</a>
+
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#new">New</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <a href=""><i class='bx bx-shopping-bag' ></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- ended header section -->
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Explore the Air Jordan World</h1>
+            
+        </div>
+
+        <div class="img-background">
+            <img src="images/background air jordan.jpg" alt="">
+        </div>
+
+        <div class="img-text">
+            <h1>Iconic Look, Everyday Comfort</h1>
+            <p>The Air Jordan I Mid Shoe is inspired by the first AJI, <br> offering OG fans a look at how far the Jordan Brand has <br> come since 1985.</p>
+        </div>
+    </section>
+    <!-- ended home section -->
+
+    <!-- started featured section -->
+    <section class="featured" id="featured">
+        <div class="center-text">
+            <h2>Featured Categories</h2>
+        </div>
+
+        <div class="featured-content">
+            <div class="row">
+                <img src="images/JORDAN 1 RETRO HIGH SHADOW (2018).webp" class="img-sizing">
+                <div class="featured-text">
+                    <p>JORDAN 1 RETRO HIGH SHADOW (2018)</p>
+                    <p class="featuredPrice">189$</p>
+                </div>
+                <button class="productButton">Buy Now</button>
+            </div>
+
+            <div class="row">
+                <img src="images/JORDAN 1 RETRO HIGH OG ATMOSPHERE.webp" class="img-sizing">
+                <div class="featured-text">
+                    <p>JORDAN 1 RETRO HIGH OG ATMOSPHERE</p>
+                    <p class="featuredPrice">189$</p>
+                </div>
+                <button class="productButton">Buy Now</button>
+            </div>
+
+            <div class="row">
+                <img src="images/JORDAN 1 RETRO HIGH OG UNC TOE.webp" class="img-sizing">
+                <div class="featured-text">
+                    <p>JORDAN 1 RETRO HIGH OG UNC TOE</p>
+                    <p class="featuredPrice">189$</p>
+                </div>
+                <button class="productButton">Buy Now</button>
+            </div>
+
+            <div class="row">
+                <img src="images/JORDAN 1 RETRO HIGH OG YELLOW TOE.webp" class="img-sizing">
+                <div class="featured-text">
+                    <p>JORDAN 1 RETRO HIGH OG YELLOW TOE</p>
+                    <p class="featuredPrice">189$</p>
+                </div>
+                <button class="productButton">Buy Now</button>
+            </div>
+
+            <div class="row">
+                <img src="images/JORDAN 1 RETRO HIGH OG PATENT BRED.webp" class="img-sizing">
+                <div class="featured-text">
+                    <p>JORDAN 1 RETRO HIGH OG PATENT BRED</p>
+                    <p class="featuredPrice">189$</p>
+                </div>
+                <button class="productButton">Buy Now</button>
+            </div>
+
+            <div class="row">
+                <img src="images/JORDAN 1 RETRO HIGH TRAVIS SCOTT.webp" class="img-sizing">
+                <div class="featured-text">
+                    <p>JORDAN 1 RETRO HIGH TRAVIS SCOTT</p>
+                    <p class="featuredPrice">189$</p>
+                </div>
+                <button class="productButton">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="paymentLayout">
+            <form onsubmit=" return formValidation()" class="payment">
+                <h1 class="userinformation">Personal Information</h1>
+                <label for="">Name:</label>
+                <input type="text" placeholder="Enter your name" class="userinput">
+                <label for="">Phone Number:</label>
+                <input type="number" required placeholder="+ 91 232 323 2323" class="userinput" id="validateNumber" onkeyup="return functionNumber()">
+                <label for="">Email:</label>
+                <input type="email" placeholder="abc123@gmail.com" class="userinput" id="validateEmail" spellcheck="false">
+                <label for="">Address:</label>
+                <input type="text" placeholder="Enter your address" class="userinput">
+                <h1 class="userinformation">Card Information</h1>
+                <div class="cardicons">
+                    <img src="images/logovisa.png" style="width: 70px;" alt="">
+                </div>
+                <input type="password" class="userinput" placeholder="Card Number">
+                <div class="cardinfo">
+                    <input type="number" placeholder="mm" class="userinput ci">
+                    <input type="number" placeholder="yyyy" class="userinput ci">
+                    <input type="number" placeholder="CVV" class="userinput ci">
+                </div>
+                <input class="payButton" type="submit" value="Checkout">
+                <!-- <button class="payButton">Checkout</button> -->
+                <span class="closeButton">X</span>
+            </form>
+        </div>
+
+    </section>
+    <!-- featured section ended -->
+
+    <!-- new section started -->
+    <section class="new" id="new">
+        <div class="center-text">
+            <h2>New Arrivals</h2>
+        </div>
+
+        <div class="new-content">
+
+            <div class="box">
+                <img src="images/Jumpman Two Trey" class="img-sizing">
+                <h5>Jumpman Two Grey</h5>
+                <h6>199$</h6>
+                <div class="sale">
+                    <h4>Sale</h4>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Paris Saint German Jumpman" class="img-sizing">
+                <h5>Paris Saint German Jumpman</h5>
+                <h6>199$</h6>
+                <div class="sale">
+                    <h4>Sale</h4>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Jordan Stay Loyal 2" class="img-sizing">
+                <h5>Jordan Stay Loyal 2</h5>
+                <h6>199$</h6>
+                <div class="sale">
+                    <h4>Sale</h4>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- new section ended -->
+
+    <!-- contact section started -->
+    <section class="contact" id="contact"> 
+
+        <div class="main-contact">
+            <h3>About Us</h3>
+            <li><a href="#">Find A Store</a></li>
+            <li><a href="#">Become A Member</a></li>
+            <li><a href="#">Send Us Feedback</a></li>
+        </div>
+
+        <div class="main-contact">
+            <h3>Explore</h3>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#new">New</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+
+        <div class="main-contact">
+            <h3>Get Help</h3>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Payment Options</a></li>
+        </div>
+
+        <div class="main-contact">
+            <h3>Let's Connect With Us</h3>
+            <div class="icons">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp-square' ></i></a>
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="last-text">
+        <p>Copyright © 2023 Nike, Inc. All Rights Reserved</p>
+    </div>
+
+    <script src="script.js"></script>    
+
+</body>
+</html>
